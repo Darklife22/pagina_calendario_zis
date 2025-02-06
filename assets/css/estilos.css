@@ -1,0 +1,20 @@
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.navbar {
+    background-color: #004080;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    margin: 20px 0;
+}

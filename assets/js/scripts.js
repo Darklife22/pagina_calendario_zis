@@ -1,0 +1,1 @@
+console.log("Sistema de Control de Actividades Zis activo");
