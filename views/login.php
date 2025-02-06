@@ -1,4 +1,3 @@
-<!-- views/login.php -->
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="es">

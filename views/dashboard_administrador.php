@@ -1,4 +1,3 @@
-<!-- views/dashboard_admin.php -->
 <?php
 session_start();
 if ($_SESSION['rol'] !== 'administrador') {
@@ -19,8 +18,11 @@ if ($_SESSION['rol'] !== 'administrador') {
     <?php include('../partials/navbar.php'); ?>
     <div class="container mt-4">
         <h2 class="text-center">Panel del Administrador</h2>
-        <a href="../backend/informes.php" class="btn btn-success">Generar Informe Diario</a>
-        <a href="../backend/usuarios.php" class="btn btn-secondary">Gestionar Usuarios</a>
+        <div id="panel-admin">
+            <a href="crear_usuario.php" class="btn btn-primary">Crear Nuevo Usuario</a>
+            <a href="../backend/informes.php?reporte_dia=<?php echo date('Y-m-d'); ?>" class="btn btn-success">Generar Informe Diario</a>
+            <a href="ver_informes.php" class="btn btn-info">Ver Informes</a>
+        </div>
     </div>
 </body>
 </html>

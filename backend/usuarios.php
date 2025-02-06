@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $conn->prepare("INSERT INTO usuarios (nombre, correo, contraseña, rol) VALUES (?, ?, ?, ?)");
     $stmt->bind_param("ssss", $nombre, $correo, $contraseña, $rol);
     $stmt->execute();
-    header("Location: ../views/dashboard_admin.php?user_added=1");
+    header("Location: ../views/dashboard_administrador.php?user_added=1");
     exit();
 }
 ?>

@@ -1,4 +1,3 @@
-<!-- views/dashboard_miembro.php -->
 <?php
 session_start();
 if ($_SESSION['rol'] !== 'miembro') {
@@ -19,7 +18,7 @@ if ($_SESSION['rol'] !== 'miembro') {
     <?php include('../partials/navbar.php'); ?>
     <div class="container mt-4">
         <h2 class="text-center">Subir Informe Diario</h2>
-        <form action="../backend/informes.php" method="POST" enctype="multipart/form-data">
+        <form id="formulario-informe" action="../backend/informes.php" method="POST" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="nombre_actividad" class="form-label">Nombre de la Actividad</label>
                 <input type="text" class="form-control" name="nombre_actividad" required>
